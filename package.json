@@ -1,0 +1,25 @@
+{
+  "name": "mern-course",
+  "version": "1.0.0",
+  "description": "mern, react",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Andrey dum",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
