@@ -16,12 +16,13 @@ router.post(
     ],
     async (req, res) => {
     try {
+      
         const errors = validationResult(req)
 
-        if (errors.isEmpty()) {
+        if (!errors.isEmpty()) {
             return res.status(400).json({
                 errors: errors.array(),
-                message: 'Некорректные данные при регитсрации'
+                message: 'Некорректные данные при региcтрации'
             })
         }
 
@@ -55,15 +56,16 @@ router.post(
     ],
     async (req, res) => {
     try {
+        
         const errors = validationResult(req)
 
-        if (errors.isEmpty()) {
+        if (!errors.isEmpty()) {
             return res.status(400).json({
                 errors: errors.array(),
-                message: 'Некорректные данные при входу'
+                message: 'Некорректные данные при входе'
             })
         }
-
+        
         const {email, password} = req.body
 
         const user = await User.findOne({ email })
@@ -87,8 +89,6 @@ router.post(
         )
 
         res.json({ token, userId: user.id })
-
-
 
     } catch (error) {
         res.status(500).json({message: 'что-то пошло не так. Попробуйте снова.'})
