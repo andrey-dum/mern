@@ -18,9 +18,7 @@ export default function DetailPage() {
                 })
                 setLink(fetched)
             } catch (error) { }
-        },
-        [token, linkId, request],
-    )
+        }, [token, linkId, request])
 
     useEffect(() => {
         getLink()
