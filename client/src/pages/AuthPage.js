@@ -22,7 +22,6 @@ export default function AuthPage() {
 
     useEffect(() => {
        window.M.updateTextFields()
-    
     }, [])
 
     const changeHandler = (event) => {
@@ -59,6 +58,7 @@ export default function AuthPage() {
                                 name="email" 
                                 type="text"
                                 className="formInput"
+                                value={form.email}
                                 onChange={changeHandler}
                             />
                             <label htmlFor="email">Email</label>
@@ -70,6 +70,7 @@ export default function AuthPage() {
                                 name="password" 
                                 type="password" 
                                 className="formInput"
+                                value={form.password}
                                 onChange={changeHandler}
                             />
                             <label htmlFor="password">Password</label>
