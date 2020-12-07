@@ -29,3 +29,7 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label,
 input[type=password]:not(.browser-default):focus:not([readonly])+label {
   color: #0097a7
 }
+
+nav .nav-wrapper {
+  padding: 0 20px;
+}
