@@ -16,18 +16,21 @@ input.formInput {
   padding: 0 10px;
   
 }
+.input-field>label {
+  color: #cccccc;
+}
 input.formInput:focus {
   border-bottom: 1px solid #0097a7!important;
   box-shadow: 0 1px 0 0 #0097a7!important;
   
 }
 .input-field>input[type]:-webkit-autofill:not(.browser-default)+label {
-  color: #0097a7!important;
+  color: #fff!important;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly])+label, 
 input[type=password]:not(.browser-default):focus:not([readonly])+label {
-  color: #0097a7
+  color: #fff!important;
 }
 
 nav .nav-wrapper {
